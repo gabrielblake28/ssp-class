@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/BlakeCSS.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="flex-column">
+        <header class="header-text">Welcome @ViewBag.UserFirstName @ViewBag.UserLastName</header>
+        <div id="content">
+            <article>
+                @RenderBody()
+            </article>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Shopping</li>
+                <li>About</li>
+                <li><a href="@Url.Action("ListAllProducts","Blake")">Show Products</a></li>
+                <li><a href="@Url.Action("EnterNewProduct","Blake")">Add Products</a></li>
+                <li><a href="@Url.Action("Index","Home")">SignUp</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            -contact  -partners   -bleh   -bleh
+        </footer>
+    </div>
+</body>
+</html>

@@ -47,6 +47,7 @@ namespace PROG123.DAL
             //Step #3 - query the DB
             SqlDataReader reader = cmd.ExecuteReader();
             reader.Read();
+   
             //get the user ID
             string PersonID = reader[0].ToString();
 
@@ -55,7 +56,6 @@ namespace PROG123.DAL
 
             return PersonID;
         }
-
         /// <summary>
         /// Deletes the record from the database based on the PersonID
         /// </summary>
@@ -108,8 +108,6 @@ namespace PROG123.DAL
             personModel.Address = reader["address"].ToString();
             personModel.UserName = reader["UserName"].ToString();
             personModel.Password = reader["Password"].ToString();
-            personModel.PersonID = personID.ToString();
-
             //Step #4 - close the connection
             conn.Close();
 
@@ -126,7 +124,6 @@ namespace PROG123.DAL
             string connStr = _configuration.GetConnectionString("MyConnString");
             SqlConnection conn = new SqlConnection(connStr);
             conn.Open();
-
             //Step #2 - create a command
             string query = "UPDATE [dbo].[Person]SET " +
                 "[FName] = @FName ," +

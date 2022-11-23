@@ -41,8 +41,39 @@ namespace PROG123.Controllers
         {
 
             var person = new DALPerson(_configuration);
-            person.AddPerson(personModel);
+            HttpContext.Session.SetString("PersonID", person.AddPerson(personModel));
             return View(personModel);
+        }
+
+        public IActionResult EditPerson(PersonModel personModel)
+        {
+            return View(new DALPerson(_configuration).getPerson(HttpContext.Session.GetString("PersonID")));
+        }
+
+        public IActionResult UpdatePerson(PersonModel person)
+        {
+            string id = HttpContext.Session.GetString("PersonID");
+            person.PersonID = id;
+
+            DALPerson dp = new DALPerson(_configuration);
+
+            dp.UpdatePerson(person);
+
+            return View("page2", person);
+        }
+
+        public IActionResult DeletePerson(PersonModel person)
+        {
+
+            string id = HttpContext.Session.GetString("PersonID");
+            person.PersonID = id;
+
+            DALPerson dp = new DALPerson(_configuration);
+
+            dp.DeletePerson(id);
+
+            return View();
+           
         }
 
     }

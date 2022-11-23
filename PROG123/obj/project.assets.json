@@ -6633,19 +6633,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chaun\\.nuget\\packages\\": {}
+    "C:\\Users\\Gabriel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chaun\\source\\repos\\Phase-1\\PROG123\\PROG123.csproj",
+      "projectUniqueName": "C:\\Users\\Gabriel\\source\\repos\\ssp-class\\PROG123\\PROG123.csproj",
       "projectName": "PROG123",
-      "projectPath": "C:\\Users\\chaun\\source\\repos\\Phase-1\\PROG123\\PROG123.csproj",
-      "packagesPath": "C:\\Users\\chaun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chaun\\source\\repos\\Phase-1\\PROG123\\obj\\",
+      "projectPath": "C:\\Users\\Gabriel\\source\\repos\\ssp-class\\PROG123\\PROG123.csproj",
+      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gabriel\\source\\repos\\ssp-class\\PROG123\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\chaun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6702,7 +6702,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

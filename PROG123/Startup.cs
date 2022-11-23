@@ -42,7 +42,7 @@ namespace PROG123
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Blake}/{action=Index}/{id?}");
             });
         }
     }

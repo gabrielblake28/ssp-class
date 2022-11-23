@@ -1,0 +1,59 @@
+﻿body {
+    
+    width: 50%;
+    
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    height: 75px;
+    width: 100%;
+    background-color: dodgerblue;
+    border-radius: 6px;
+}
+
+#content {
+    float: left;
+    width: 100%;
+}
+
+
+article {
+    margin-top: 10px;
+    background-color: lightgray;
+    border-radius: 6px;
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+}
+
+nav {
+    margin: 10px 0 10px 0;
+    background-color: orange;
+    width: 150px;
+    border-radius: 10px;
+}
+
+footer {
+    border-radius: 6px;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    background: #4cff00;
+    background-color: lightgreen;
+    clear: both;
+}
+
+ul {
+    margin: 10px;
+    padding-left: 10px;
+    list-style-type: none;
+}

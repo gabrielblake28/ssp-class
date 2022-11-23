@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "AddProductToDB";
+    Layout = "~/Views/Shared/_BlakeLayout.cshtml";
+}
+
+
+@model PROG123.Models.ProductModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddProductToDB</title>
+</head>
+<body>
+    <br />
+    Name: @Model.Name
+    <br />
+    Description: @Model.Description
+    <br />
+    Price: @Model.Price
+    <br />
+    Inventory: @Model.InventoryAmount
+    <br />
+    PID: @Model.PID
+    <br />
+ 
+    <a href="@Url.Action("EnterNewProduct","Blake")">Add another product</a>
+
+</body>
+</html>

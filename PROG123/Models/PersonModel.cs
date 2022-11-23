@@ -15,6 +15,5 @@ namespace PROG123.Models
         public String PersonID { get; set; }
         public String UserName { get; set; }
         public String Password { get; set; }
-
     }
 }
